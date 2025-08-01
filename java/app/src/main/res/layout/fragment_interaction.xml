@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.interactionFragment.InteractionFragment">
+
+    <ImageView
+        android:id="@+id/imageBannerInteraction"
+        android:layout_width="388dp"
+        android:layout_height="678dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewObjInteractionF" />
+
+    <TextView
+        android:id="@+id/textViewNameIF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/chakra_bold"
+        android:shadowColor="@android:color/holo_orange_light"
+        android:text="Nome"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewObjInteractionF" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonUse"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="308dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/nabla3d"
+        android:shadowColor="#FEF100"
+        android:text="PRENDI - CONSUMA - COMBATTI"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewObjInteractionF" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonExit"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonshapenegative"
+        android:fontFamily="@font/nabla3d"
+        android:shadowColor="#FEF100"
+        android:text="Torna indietro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUse" />
+
+    <ImageView
+        android:id="@+id/imageViewObjInteractionF"
+        android:layout_width="280dp"
+        android:layout_height="283dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/textViewInfoIF"
+        android:layout_width="331dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="64dp"
+        android:fontFamily="@font/chakra_regular"
+        android:text="testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo testo "
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonExit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewNameIF"
+        app:layout_constraintVertical_bias="0.702" />
+
+    <TextView
+        android:id="@+id/textLevelIF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/chakra_regular"
+        android:text="LIVELLO"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameIF" />
+
+    <TextView
+        android:id="@+id/textViewLevelIF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/chakra_bold"
+        android:text="99"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textLevelIF"
+        app:layout_constraintStart_toEndOf="@+id/textLevelIF"
+        app:layout_constraintTop_toTopOf="@+id/textLevelIF" />
+
+    <ImageView
+        android:id="@+id/imageBorderImageInteraction"
+        android:layout_width="353dp"
+        android:layout_height="378dp"
+        android:layout_marginBottom="-48dp"
+        android:rotation="90"
+        android:src="@drawable/border_iron"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewObjInteractionF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

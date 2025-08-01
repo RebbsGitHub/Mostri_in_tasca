@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.showitem.ShowItemFragment">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/banner"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewItemName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewItemName"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/textViewItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/chakra_bold"
+        android:text="testoprova"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewItem"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="95dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewItemName" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonClose"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/nabla3d"
+        android:shadowColor="#FEF100"
+        android:text="Torna indietro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/chakra_bold"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewItemName" />
+
+    <TextView
+        android:id="@+id/textViewItemInfo"
+        android:layout_width="330dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/chakra_regular"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLevel" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="284dp"
+        android:layout_height="568dp"
+        android:src="@drawable/border_iron"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewItem"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewItem"
+        app:layout_constraintStart_toStartOf="@+id/imageViewItem"
+        app:layout_constraintTop_toTopOf="@+id/imageViewItem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

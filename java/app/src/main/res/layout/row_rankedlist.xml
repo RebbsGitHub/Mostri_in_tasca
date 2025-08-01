@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="140dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="-25dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/border" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="140dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="-25dp"
+        android:rotation="-90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/border" />
+
+    <ImageView
+        android:id="@+id/imageViewRankedImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/textViewRankedListName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-5dp"
+        android:fontFamily="@font/chakra_bold"
+        android:text="nome"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewRankedImage"
+        app:layout_constraintTop_toTopOf="@+id/imageViewRankedImage" />
+
+    <TextView
+        android:id="@+id/textViewRankedEXP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="@font/chakra_regular"
+        android:text="EXP: XXXX"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/chakra_regular"
+        android:text="Equipaggiamento"
+        app:layout_constraintStart_toEndOf="@+id/imageViewRankedImage"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRankedListName" />
+
+    <ImageView
+        android:id="@+id/imageRankedAmuletBlock"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="#B4B6BC"
+        app:layout_constraintBottom_toBottomOf="@+id/imageRankedArmorBlock"
+        app:layout_constraintEnd_toEndOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/imageRankedArmorBlock"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="#B4B6BC"
+        app:layout_constraintBottom_toBottomOf="@+id/imageRankedWeaponBlock"
+        app:layout_constraintEnd_toStartOf="@+id/imageRankedAmuletBlock"
+        app:layout_constraintStart_toEndOf="@+id/imageRankedWeaponBlock" />
+
+    <ImageView
+        android:id="@+id/imageRankedWeaponBlock"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:background="#B4B6BC"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/imageBorderRankedListRow"
+        android:layout_width="317dp"
+        android:layout_height="128dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewRankedImage"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRankedImage"
+        app:layout_constraintStart_toStartOf="@+id/imageViewRankedImage"
+        app:layout_constraintTop_toTopOf="@+id/imageViewRankedImage"
+        app:srcCompat="@drawable/border_iron" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

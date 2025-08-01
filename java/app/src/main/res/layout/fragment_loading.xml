@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.otherfragments.LoadingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imageBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="SID:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageBG" />
+
+    <TextView
+        android:id="@+id/textViewUID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textUID"
+        app:layout_constraintTop_toTopOf="@+id/textUID" />
+
+    <TextView
+        android:id="@+id/textViewSID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/textSID"
+        app:layout_constraintTop_toTopOf="@+id/textSID" />
+
+    <TextView
+        android:id="@+id/textUID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UID:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textSID"
+        app:layout_constraintTop_toBottomOf="@+id/textSID" />
+
+    <ImageView
+        android:id="@+id/imageBannerLoading"
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        android:src="@drawable/banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageBG" />
+
+    <TextView
+        android:id="@+id/textViewLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="133dp"
+        android:fontFamily="@font/nabla3d"
+        android:text="Mostri in Tasca"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonEnter"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/nabla3d"
+        android:shadowColor="#FEF100"
+        android:text="GIOCA!"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoading" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

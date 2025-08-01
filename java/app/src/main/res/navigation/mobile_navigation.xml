@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loadingFragment">
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.application.mostridatasca1.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.application.mostridatasca1.ui.map.MapFragment"
+        android:label="@string/title_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/navigation_nearlist"
+        android:name="com.application.mostridatasca1.ui.nearlist.NearListFragment"
+        android:label="@string/title_nearlist"
+        tools:layout="@layout/fragment_nearlist" />
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="com.application.mostridatasca1.ui.otherfragments.LoadingFragment"
+        android:label="fragment_loading"
+        tools:layout="@layout/fragment_loading" />
+    <fragment
+        android:id="@+id/showItemFragment"
+        android:name="com.application.mostridatasca1.ui.showitem.ShowItemFragment"
+        android:label="fragment_showitem"
+        tools:layout="@layout/fragment_showitem" />
+    <fragment
+        android:id="@+id/rankedFragment"
+        android:name="com.application.mostridatasca1.ui.rankedlist.RankedFragment"
+        android:label="fragment_ranked"
+        tools:layout="@layout/fragment_ranked" />
+    <fragment
+        android:id="@+id/interactionFragment"
+        android:name="com.application.mostridatasca1.ui.interactionFragment.InteractionFragment"
+        android:label="fragment_interaction"
+        tools:layout="@layout/fragment_interaction" />
+    <fragment
+        android:id="@+id/playersProfileFragment"
+        android:name="com.application.mostridatasca1.ui.playersprofilefragment.PlayersProfileFragment"
+        android:label="fragment_playersprofile"
+        tools:layout="@layout/fragment_playersprofile" />
+</navigation>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="367dp"
+        android:layout_height="452dp"
+        android:layout_marginBottom="-115dp"
+        android:src="@drawable/border_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPlayerImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewPlayerImage"
+        android:layout_width="223dp"
+        android:layout_height="223dp"
+        android:layout_marginTop="42dp"
+        android:background="@color/teal_700"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundedCorners"
+
+        tools:src="@drawable/profilepic_noimage" />
+
+
+    <!--
+        <ImageView
+            android:id="@+id/imageViewPlayerImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/teal_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+    -->
+
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/chakra_bold"
+        android:text="nome-giocatore"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPlayerImage" />
+
+    <TextView
+        android:id="@+id/textHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="190dp"
+        android:fontFamily="@font/chakra_bold"
+        android:text="HP"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPlayerImage" />
+
+    <TextView
+        android:id="@+id/textEXP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="42dp"
+        android:fontFamily="@font/chakra_bold"
+        android:text="EXP"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textHP" />
+
+    <TextView
+        android:id="@+id/textViewPlayerHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/chakra_regular"
+        android:text="100"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textHP"
+        app:layout_constraintTop_toBottomOf="@+id/textHP" />
+
+    <TextView
+        android:id="@+id/textViewPlayerEXP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/chakra_regular"
+        android:text="12313"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textEXP"
+        app:layout_constraintTop_toBottomOf="@+id/textEXP" />
+
+    <ImageView
+        android:id="@+id/imageViewWeapon"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="8dp"
+        android:background="#8E8E8E"
+
+
+        app:layout_constraintEnd_toStartOf="@+id/imageViewArmour"
+        app:layout_constraintTop_toTopOf="@+id/imageViewArmour" />
+
+    <ImageView
+        android:id="@+id/imageViewArmour"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="150dp"
+        android:background="#8E8E8E"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPlayerHP" />
+
+    <ImageView
+        android:id="@+id/imageViewAmulet"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="8dp"
+        android:background="#8E8E8E"
+
+        app:layout_constraintStart_toEndOf="@+id/imageViewArmour"
+        app:layout_constraintTop_toTopOf="@+id/imageViewArmour" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRankedList"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/nabla3d"
+        android:shadowColor="#FEF100"
+        android:text="Migliori Giocatori"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewArmour" />
+
+
+    <ImageView
+        android:id="@+id/imageViewEditName"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewUserName"
+        app:layout_constraintStart_toEndOf="@+id/textViewUserName"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageView
+        android:id="@+id/imageViewEditProfileImg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPlayerImage"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPlayerImage"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <Switch
+        android:id="@+id/switchPositionShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/chakra_regular"
+        android:text="Condividi posizione con altri giocatori"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserName" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/border_iron"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewAmulet"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewAmulet"
+        app:layout_constraintStart_toStartOf="@+id/imageViewAmulet"
+        app:layout_constraintTop_toTopOf="@+id/imageViewAmulet" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/border_iron"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewArmour"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewArmour"
+        app:layout_constraintStart_toStartOf="@+id/imageViewArmour"
+        app:layout_constraintTop_toTopOf="@+id/imageViewArmour" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/border_iron"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewWeapon"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewWeapon"
+        app:layout_constraintStart_toStartOf="@+id/imageViewWeapon"
+        app:layout_constraintTop_toTopOf="@+id/imageViewWeapon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
