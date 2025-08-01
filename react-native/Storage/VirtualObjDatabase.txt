@@ -1,0 +1,73 @@
+
+// Inizializzazione Database
+export const createVOBJTables = async (db) => {
+    try {
+        await db.execAsync(
+            `CREATE TABLE IF NOT EXISTS virtualobj (
+    
+                id INTEGER PRIMARY KEY,
+                type TEXT,
+                level INTEGER, 
+                lat FLOAT,
+                lon FLOAT,
+                image STRING,
+                name TEXT,
+                
+                );`
+        );
+        console.log('database virtualobj init!');
+    } catch (error) {
+        console.log('Errore virtualobj Db: ', error);
+    }
+};
+
+
+//Aggiornamento database - inserimento dati (ancora da provare)
+export const addItem = async (item, db) => {
+    try {
+        console.log("Inserimento dati in virtualobj...")
+        await db.runAsync('INSERT INTO virtualobj (id,type,level,lat,lon,image,name) VALUES (?, ?, ?, ?, ?, ?, ?)', [item.id, item.type, item.level, item.lat, item.lon, item.image, item.name]);
+        console.log("Inserimento dati in virtualobj... FATTO")
+    } catch (error) {
+        console.log("ERRORE Inserimento in virtualobj: ", error)
+    }
+}
+
+
+//Aggiornamento database - rimozione dati (ancora da provare)
+export const deleteAllvirtualobj = async (db) => {
+    async function cancellaItems(db) {
+        try {
+            const valueret = await db.runAsync('DROP TABLE IF EXISTS virtualobj;',);
+            console.log('cancellazione database eseguita, ', await valueret)
+
+        } catch (error) {
+            console.log('ERRORE caricamento funzione virtualobj : ', error);
+        }
+    };
+    cancellaItems(db);
+}
+
+
+// Richiesta User tramite UID
+export const getItemByUid = async (db, idItem) => {
+    async function getItem(db, idItem) {
+        try {
+            const Row = await db.getFirstAsync('SELECT * FROM users WHERE uid = ?', idItem);
+            //console.log(' dati:')
+            if (!Row) {
+                //console.log("non cè il tizio nel db")
+                return null
+            } else {
+                //console.log(Row.uid, Row.life, Row.experience);
+
+                return Row;
+            }
+
+        } catch (error) {
+            console.log('ERRORE caricamento funzione virtualobj : ', error);
+        }
+    };
+
+    return getItem(db, idItem);
+}
